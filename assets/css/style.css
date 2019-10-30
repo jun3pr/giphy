@@ -31,7 +31,8 @@ body {
 
  label {
     color: red;
-   
+    font-size: 25px;
+    margin-right: 10px;
  }
  
  p{
