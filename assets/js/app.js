@@ -75,20 +75,20 @@ gifImage.attr("data-still", results[i].images.fixed_height_small_still.url);
 //animated images
 gifImage.attr("data-animate", results[i].images.fixed_height_small.url);
 
-//how images come in, already paused
+//images are paused
 gifImage.attr("data-state", "still");
 
 gifImage.addClass("image");
 
 gifDiv.append(gifImage);
 
-//add new div to existing divs
+
 $("#gifsView").prepend(gifDiv);
 }
 });
 }
 
-//Created Buttons
+//Creates Buttons
 displayGifButtons();
 addNewButton();
 
