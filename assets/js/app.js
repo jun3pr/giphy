@@ -22,16 +22,17 @@ $( document ).ready(function() {
     function addNewButton() {
     $("#addGif").on("click", function() {
    
-    let shows = $("#topicInput").val().trim();
+    //no blank buttons
+        let shows = $("#topicInput").val().trim();
         if (shows == ""){
-            return false;//no blank buttons
+            return false;
     }
 
     topic.push(shows);
         displayGifButtons();
             return false;
             });
-        }
+    }
         
         //function that displays the gifs
 
@@ -54,3 +55,8 @@ $( document ).ready(function() {
         if (results == ""){
         alert("Ehh no GIF for this!");
     }
+
+    for (let i = 0; i<results.length; i++){
+        
+        //put gifs in a div
+        let gifDiv = $("<div1>");
