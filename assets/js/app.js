@@ -60,3 +60,17 @@ $( document ).ready(function() {
         
         //put gifs in a div
         let gifDiv = $("<div1>");
+
+
+        //pull rating of gif
+    let gifRating = $("<p>").text("Rating " + results[i].rating);
+    gifDiv.append(gifRating);
+
+
+//pull gif
+let gifImage = $("<img>");
+gifImage.attr("src", results[i].images.fixed_height_small_still.url);
+//paused images
+gifImage.attr("data-still", results[i].images.fixed_height_small_still.url);
+//animated images
+gifImage.attr("data-animate", results[i].images.fixed_height_small.url);
