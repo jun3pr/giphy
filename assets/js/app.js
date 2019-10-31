@@ -38,3 +38,19 @@ $( document ).ready(function() {
     function displayGifs() {
         let shows = $(this).attr("data-name");
             let queryURL = "https://api.giphy.com/v1/gifs/search?q=" + shows + "&api_key=dc6zaTOxFJmzC&limit=8";
+
+    $.ajax({
+        url: queryURL,
+        method: 'GET'
+    })
+
+
+    .done(function(response) {
+        $("#gifsView").empty();
+    
+        //show results of gifs
+    
+    let results = response.data;
+        if (results == ""){
+        alert("Ehh no GIF for this!");
+    }
