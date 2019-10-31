@@ -87,3 +87,25 @@ $("#gifsView").prepend(gifDiv);
 }
 });
 }
+
+//Created Buttons
+displayGifButtons();
+addNewButton();
+removeLastButton();
+
+//event listeners
+$(document).on("click", ".shows", displayGifs);
+
+$(document).on("click", ".image", function() {
+
+let state = $(this).attr('data-state');
+    if (state == 'still') {
+        $(this).attr('src', $(this).data('animate'));
+        $(this).attr('data-state', 'animate');
+}           
+        else {
+            $(this).attr('src', $(this).data('still'));
+            $(this).attr('data-state', 'still');
+}
+});
+});
