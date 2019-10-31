@@ -1,6 +1,6 @@
 $( document ).ready(function() {
     // my array
-    let topic = [];
+    let topic = ["Game Of Thrones","Breaking Bad","House Of Cards","Peaky Blinders","Money Heist","Elite","Spartacus","The Night Of"];
     //function that displays the gif buttons
     
     function displayGifButtons() {
