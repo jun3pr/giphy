@@ -1,5 +1,5 @@
 body {
-    background: url() center center fixed;
+    background: url("../images/back.jpg") center center fixed;
     font-family: 'Kaushan Script', cursive;
  }
  
@@ -13,24 +13,24 @@ body {
     margin: 10px;
     opacity: .8;
     background-color: black;
-    border-color: red;
+    border-color: white;
  }
  
  .jumbotron {
-    color: red;
+    color:rgb(63, 3, 3);
     margin-bottom: auto;
     padding-bottom: 20px;
-    padding-top: 25px;
+    padding-top: 25px;s
     margin-right: 10%;
     margin-left: 10%;
     text-align: center;
     opacity: .6;
-    background-color: #fff;
+    background-color: #fff;s
     margin: 0 auto;
  }
 
  label {
-    color: red;
+    color:aqua;
     font-size: 25px;
     margin-right: 10px;
  }
