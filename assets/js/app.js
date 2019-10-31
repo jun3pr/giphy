@@ -38,7 +38,7 @@ $( document ).ready(function() {
 
     function displayGifs() {
         let shows = $(this).attr("data-name");
-            let queryURL = "https://api.giphy.com/v1/gifs/search?q=" + shows + "&api_key=dc6zaTOxFJmzC&limit=8";
+            let queryURL = "https://api.giphy.com/v1/gifs/search?q=" + shows + "&api_key=CMUguW4skhVNbhecgbvPYArazJ7O7Zsp";
 
     $.ajax({
         url: queryURL,
@@ -91,7 +91,7 @@ $("#gifsView").prepend(gifDiv);
 //Created Buttons
 displayGifButtons();
 addNewButton();
-removeLastButton();
+
 
 //event listeners
 $(document).on("click", ".shows", displayGifs);
